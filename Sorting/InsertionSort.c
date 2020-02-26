@@ -13,16 +13,16 @@ void printArray(int v[], int n){
 
 void insertionSort(int v[], int n){
 
-    int pivot, i, j;
+    int key, i, j;
 
     for (i = 1; i < n; i++){
-        pivot = v[i];
+        key = v[i];
         j = i - 1;
-        while (pivot < v[j] && j >= 0){
+        while (key < v[j] && j >= 0){
             v[j + 1] = v[j];
             j--;          
         }
-        v[j + 1] = pivot;
+        v[j + 1] = key;
     }
 
 }
